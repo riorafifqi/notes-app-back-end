@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start_prod": "NODE_ENV=production node ./src/server.js",
     "start": "nodemon ./src/server.js",
     "lint": "eslint ./src"
   },
@@ -16,10 +17,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "@hapi/hapi": "^20.2.2"
   },
   "dependencies": {
-    "@hapi/hapi": "^20.2.2",
     "nanoid": "^3.3.4"
   }
 }
